@@ -1,0 +1,276 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 微軟正黑體, sans-serif;
+  background: url(../images/編織地磚.png); }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.75); }
+  .header .logo {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 15px; }
+    .header .logo .text {
+      color: white; }
+    .header .logo img {
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      margin-right: 15px; }
+    .header .logo img:hover {
+      border: 1.5px solid white;
+      width: 45px;
+      height: 45px;
+      border-radius: 35%; }
+  .header nav {
+    text-align: center;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .header nav a {
+      text-decoration: none;
+      color: #d8d8d8;
+      padding: 20px 20px;
+      -webkit-transition: 0.15s;
+      -o-transition: 0.15s;
+      transition: 0.15s; }
+    .header nav a:hover {
+      background-color: #7e7e7e;
+      color: white;
+      border-radius: 13%; }
+
+.banner img {
+  width: 100%;
+  height: 470px;
+  display: block; }
+
+.banner-shadow {
+  vertical-align: top;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, rgba(255, 255, 255, 0.5)), color-stop(55%, rgba(184, 184, 184, 0.5)), color-stop(80%, rgba(146, 146, 146, 0.5)));
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.5) 30%, rgba(184, 184, 184, 0.5) 55%, rgba(146, 146, 146, 0.5) 80%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 30%, rgba(184, 184, 184, 0.5) 55%, rgba(146, 146, 146, 0.5) 80%); }
+
+.about {
+  padding-bottom: 50px;
+  text-align: center;
+  margin: 0 auto; }
+  .about .chair p img {
+    max-width: 400px;
+    max-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 50%; }
+  .about .wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .about .wrap .item {
+      width: 100%;
+      height: 180px;
+      margin: 50px auto;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      .about .wrap .item img {
+        border-radius: 8%;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s; }
+      .about .wrap .item img:hover {
+        border-radius: 8%;
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        -webkit-transform: rotate(360deg); }
+  .about .email {
+    text-align: center;
+    padding: 15px 0; }
+    .about .email img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px; }
+  .about > h2 {
+    font-weight: bold;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 40px;
+    padding: 30px 0; }
+  .about > p {
+    width: 66%;
+    margin: 10px auto;
+    text-align: left;
+    font-size: 20px;
+    line-height: 3.5; }
+
+.works {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s; }
+  .works img {
+    width: 300px;
+    height: 200px;
+    margin: 10px auto; }
+  .works img:hover {
+    -webkit-box-shadow: 5px 8px 8px #7c7c7c;
+    box-shadow: 5px 8px 8px #7c7c7c;
+    -webkit-transform: translate(-1%, -1%);
+    -ms-transform: translate(-1%, -1%);
+        transform: translate(-1%, -1%);
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s; }
+
+.footer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #c9c9c9;
+  padding: 20px 0; }
+
+/* ipad區域 */
+@media screen and (max-width: 768px) {
+  .header {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 10px 0 0 0; }
+    .header .logo {
+      margin: 0 auto; }
+    .header nav a {
+      width: 20%;
+      padding: 15px 30px; }
+  .banner img {
+    height: 360px; }
+  .about {
+    max-width: 100%; }
+    .about .chair p img {
+      max-width: 60%;
+      max-height: 60%;
+      border-radius: 50%; }
+    .about > p {
+      width: 90%;
+      font-size: 18px; }
+    .about .wrap .item {
+      margin: 10px auto; }
+    .about .works {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin: 0 auto; }
+      .about .works img {
+        width: 90%;
+        margin-top: 10%; }
+  .footer {
+    font-size: 14px; } }
+
+/* mobile區域*/
+@media screen and (max-width: 414px) {
+  .header {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 10px 0 0 0; }
+    .header .logo {
+      margin: 0 auto; }
+    .header nav a {
+      width: 20%;
+      padding: 15px 15px; }
+  .banner img {
+    height: 180px; }
+  .about {
+    max-width: 100%; }
+    .about .chair p img {
+      max-width: 60%;
+      max-height: 60%;
+      border-radius: 50%; }
+    .about > p {
+      width: 90%;
+      font-size: 14px; }
+    .about .wrap {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .about .wrap .item {
+        margin: 10px auto; }
+    .about .works {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .about .works img {
+        width: 90%; }
+  .footer {
+    font-size: 12px; } }
+
+/*# sourceMappingURL=all.css.map */
