@@ -47,7 +47,7 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: 微軟正黑體, sans-serif;
+  font-family: sans-serif, 微軟正黑體;
   background: url(../images/編織地磚.png); }
 
 .header {
@@ -211,7 +211,12 @@ body {
   color: #c9c9c9;
   padding: 20px 0; }
 
-/* ipad區域 */
+/*768px ~ 992px*/
+@media screen and (max-width: 992px) {
+  .banner img {
+    height: 400px; } }
+
+/*768px以下 ipad區域 */
 @media screen and (max-width: 768px) {
   .header {
     -ms-flex-wrap: wrap;
@@ -225,6 +230,8 @@ body {
       padding: 15px 30px; }
   .banner img {
     height: 360px; }
+  .banner-shadow {
+    padding: 10px; }
   .about {
     max-width: 100%; }
     .about .chair p img {
@@ -246,7 +253,12 @@ body {
   .footer {
     font-size: 14px; } }
 
-/* mobile區域*/
+/* 414px ~ 576px */
+@media screen and (max-width: 576px) {
+  .banner img {
+    height: 250px; } }
+
+/*414px以下 mobile區域*/
 @media screen and (max-width: 414px) {
   .header {
     -ms-flex-wrap: wrap;
@@ -260,6 +272,8 @@ body {
       padding: 15px 15px; }
   .banner img {
     height: 180px; }
+  .banner-shadow {
+    padding: 5px; }
   .about {
     max-width: 100%; }
     .about .chair p img {
